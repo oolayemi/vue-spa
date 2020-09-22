@@ -4,7 +4,12 @@ import VueRouter from "vue-router";
 import Vuex from "vuex";
 import {routes} from "./routes";
 import StoreData from "./store"
-import MainApp from "./components/MainApp.vue";
+
+import MainApp from "../js/components/MainApp";
+import List from "../js/components/customers/List";
+import Main from "../js/components/customers/Main";
+import New from "../js/components/customers/New";
+import View from "../js/components/customers/View";
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
@@ -24,6 +29,11 @@ const app = new Vue({
     router,
     store,
     components: {
-        MainApp
+        MainApp,
+        List,
+        Main,
+        New,
+        View
+
     }
 });
