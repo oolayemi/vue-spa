@@ -74,7 +74,7 @@
 
         <main class="py-4">
             @yield('content')
-            <script src="{{ asset('js/app.js') }}"></script>
+            
         </main>
     </div>
 </body>
